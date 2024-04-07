@@ -17,6 +17,6 @@
     - Movie suggestions
        -Movie Lists * N Categories with horizontal scroll
 
-# NetWatchGPT
+# GPT Features
    - Search Bar
    - Movie Suggestions
