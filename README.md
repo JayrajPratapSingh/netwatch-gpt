@@ -1,8 +1,10 @@
 # NetWatch-GPT
 
--Create React App
--Configured Tailwind CSS
-
+- Create React App
+- Configured Tailwind CSS
+- Header
+- Login Form
+- Signup Form
 
 # Features
 - Login/SignUp if not authenticated
