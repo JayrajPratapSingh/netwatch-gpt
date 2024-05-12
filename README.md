@@ -4,7 +4,21 @@
 - Configured Tailwind CSS
 - Header
 - Login Form
+- routing
 - Signup Form
+- from validation
+- useRefHook
+- firebse setup
+- deploying app  to production
+- firebase login
+- firebase init == choose option carefully
+- firebse deploy
+- create SignUp user Account in firebse
+- creted store using redux toolkit 
+- implimented signout feature
+- Update Profile api call from firebase
+- Fetch movies using TMDB Api
+
 
 # Features
 - Login/SignUp if not authenticated
