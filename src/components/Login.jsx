@@ -3,11 +3,10 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import {auth} from "../utils/firebase"
 import Header from "./Header";
 import { inputDataValidation } from "../utils/validate";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { UserAvatar } from "../utils/constant";
 const Login = () => {
-  const navigate = useNavigate()
   const dispach = useDispatch()
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -20,7 +19,7 @@ const Login = () => {
       email.current.value,
       password.current.value
     );
-    // console.log(errorMessage);
+   
     setErrorMessage(Message);
 
 
@@ -40,13 +39,12 @@ const Login = () => {
 
      updateProfile(user, {
       displayName:name.current.value,
-      photoURL:"https://lh3.googleusercontent.com/ogw/AF2bZyiZHjBpRvtte2_zFB0AOjslb9ebgqCk9M34rGY4AH6jE_U=s32-c-mo"
+      photoURL:UserAvatar
     }).then(() => {
       const {uid,email, displayName, photoURL} = auth.currentUser;  // any thing updated will be in auth
-  console.log(auth.currentUser.profile)
+  
    dispach(addUser({uid:uid, email:email, displayName:displayName, photoURL:photoURL}))
-    // after update navigte to browser page
-     navigate("/browse")
+   
     }).catch((error) => {
       setErrorMessage(error.message)
     });
@@ -66,9 +64,9 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log(user)
+      
 
-     navigate("/browse")
+
 
       })
       .catch((error) => {

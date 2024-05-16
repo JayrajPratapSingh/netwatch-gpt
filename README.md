@@ -17,7 +17,23 @@
 - creted store using redux toolkit 
 - implimented signout feature
 - Update Profile api call from firebase
-- Fetch movies using TMDB Api
+- BugFix - login logout bugfix redirecting page
+- BugFix - displayName and profile photo update
+- Unsubscribe to the onAuthStateChanged callback
+- HardCoded values used in contant file
+- on TMDB API, made app and get access tocken, and movies url
+- these url used to fech movies data of now playing movies
+- planing for Main Container and Secondray Container
+- created movieSlice and movieTrailerSlice 
+- custom hook for now playing movie and For Traile
+- In custom hook feched the data of movie and Trailer video
+- Updated Trailer video data and now playing data to redux store
+- by UseSector we subscripbed the slice and uses the data for BackGroundVideo and for MainContainer
+- used imbeded code from youtube with iframe to show trailer using youtube key
+- make it autoplay and mute
+- added tailwind classes to main container to look it awesome
+-
+
 
 
 # Features
