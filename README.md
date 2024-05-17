@@ -36,6 +36,9 @@
 - made the slice for upcoming, top Rated, and Pouler
 - made the Hook for upcoming, top Rated, and Pouler
 - feched the data and stored to redux
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
 - Populated on page all the data as UI
 -
 -
