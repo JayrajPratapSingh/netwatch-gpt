@@ -32,6 +32,12 @@
 - used imbeded code from youtube with iframe to show trailer using youtube key
 - make it autoplay and mute
 - added tailwind classes to main container to look it awesome
+- Build Secondary Component
+- made the slice for upcoming, top Rated, and Pouler
+- made the Hook for upcoming, top Rated, and Pouler
+- feched the data and stored to redux
+- Populated on page all the data as UI
+-
 -
 
 
