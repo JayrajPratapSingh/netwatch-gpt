@@ -40,15 +40,23 @@
 - Build Movie Card
 - TMDB Image CDN URL
 - Populated on page all the data as UI
--
--
-
+- Planning For Apply GPT For Movie Recomendation system
+- Integrating GPT
+- GPT-Search page Created
+- GPT-Search feature
+- GPT-Search Bar Created
+- created new Slice for config
+- and we created multi language feature for search bar
+- GPT API intigration
+- 
 
 
 # Features
 - Login/SignUp if not authenticated
 - SignIn/SignUp Form
 - redirect to Browse Page
+- multi language feature for Gpt searchbar
+
 
 -Browse Page which comes after authentication
   - Header

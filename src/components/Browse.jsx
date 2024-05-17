@@ -5,7 +5,11 @@ import SecondContainer from './SecondContainer'
 import usePopulerMovies from '../Hooks/usePopulerMovies'
 import useTopRatedMovies from '../Hooks/useTopRatedMovies'
 import useUpcomingMovies from '../Hooks/useUpcomingMovies'
+import GptSuggestion from './GptSuggestion'
+import { useSelector } from 'react-redux'
 const Browse = () => {
+
+  const toggleGpt = useSelector(store=> store.gpt.toggleGptBtn)
 //feching the data by using hook build by us and updating the store
 
 useNowPlayingMovies()
@@ -13,21 +17,15 @@ usePopulerMovies()
 useTopRatedMovies()
 useUpcomingMovies()
   return (
+    
     <div>
-      <Header />
-      <MainContainer />
-      <SecondContainer />
-      {/* 
-
-      # Main Container
-       - VideoBackground
-       - VideoTitle
-      # Second Container
-       - List of Movies
-
-
       
-      */}
+      <Header />
+      {toggleGpt? <GptSuggestion /> : <>    <MainContainer />
+      <SecondContainer /></>}
+     
+   
+    
       </div>
   )
 }
